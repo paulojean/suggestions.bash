@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 __suggestions_list_commands__() {
   local command=$(
     history | \

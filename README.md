@@ -4,12 +4,15 @@ Better handling suggestions on `bash`
 ## Dependencies
 [fzf](https://github.com/junegunn/fzf)
 
-This plugin adds a binding suggestions on bash without loosing the starting text and/or the query.
+This plugin adds binding suggestions to bash in such that it can keep the starting text and/or replace it with a query.
 
 ## Installation
 Just copy `.suggestions.sh` to your home directory and add `[ -f ~/.suggestions.sh ] && source ~/.suggestions.sh` to your `.bashrc` *after* the line `[ -f ~/.fzf.bash ] && source ~/.fzf.bash` (because this pluggin overrides `fzf`'s `Ctrl-r` default begavior).
 
 ## Usage
+
+![usage example](suggestions.gif)
+
 After writing some text you can press `Ctrl-r` or `arrow up`. This will open `fzf` suggestion's box.
 The first thing to notice is that `fzf` will start the box with the text that you was writting.
 
