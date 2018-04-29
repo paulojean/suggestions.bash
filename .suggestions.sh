@@ -1,7 +1,7 @@
 __suggestions_list_commands__() {
   local command=$(
     history | \
-    sort -r | \
+    sort -n -r | \
     cut -c 8-  | \
     fzf -q "$READLINE_LINE" --print-query --height ${FZF_TMUX_HEIGHT:-40%} | \
     tail -n 1)
